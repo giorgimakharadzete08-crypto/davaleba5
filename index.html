@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f6f2">
+    <meta name="description" content="სეზონის რჩეული სამოსი — თანამედროვე სტილი ყოველდღე. აღმოაჩინე NOIR-ის ახალი კოლექცია.">
+    <title>NOIR — შენი სტილი, შენი ამბავი</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Georgian:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="announcement">უფასო მიწოდება 150₾-ზე მეტი შენაძენისას <span>✦</span> ახალი კოლექცია უკვე აქ არის</div>
+
+    <header class="site-header">
+        <button class="icon-button menu-toggle" id="menuToggle" aria-label="მენიუს გახსნა" aria-expanded="false">
+            <span></span><span></span>
+        </button>
+        <a class="wordmark" href="#" aria-label="NOIR მთავარი">NOIR<span>.</span></a>
+        <nav class="main-nav" id="mainNav" aria-label="მთავარი მენიუ">
+            <a href="#products">კოლექცია</a>
+            <a href="#story">ჩვენ შესახებ</a>
+            <a href="#newsletter">სიახლეები</a>
+        </nav>
+        <div class="header-actions">
+            <button class="icon-button search-toggle" id="searchToggle" aria-label="ძიება">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+            </button>
+            <button class="cart-button" id="cartToggle" aria-label="კალათა, 0 ნივთი">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 11.2a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.5L21 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+                <span>კალათა</span><span class="cart-count" id="cartCount">0</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="search-bar" id="searchBar">
+        <label for="searchInput">რას ეძებ?</label>
+        <input id="searchInput" type="search" placeholder="მაგ. პერანგი, კაბა...">
+        <button id="searchClose" class="icon-button" aria-label="ძიების დახურვა">×</button>
+    </div>
+
+    <main>
+        <section class="hero">
+            <img class="hero-image" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=2000&q=85" alt="ქალაქში მოსეირნე მოდურად ჩაცმული ქალი">
+            <div class="hero-shade"></div>
+            <div class="hero-content">
+                <p class="eyebrow light-eyebrow"><span></span> ახალი სეზონი · 2025</p>
+                <h1>შენი სტილი.<br>შენი ამბავი.</h1>
+                <p class="hero-copy">სამოსი, რომელიც შენს ხასიათს<br class="desktop-break"> არასდროს მალავს.</p>
+                <a class="button button-light" href="#products">აღმოაჩინე კოლექცია <span>↗</span></a>
+            </div>
+            <div class="hero-note">შექმნილია შენთვის <span>01 — 04</span></div>
+        </section>
+
+        <section class="shop-section" id="products">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow"><span></span> შერჩეული შენთვის</p>
+                    <h2>ახალი კოლექცია</h2>
+                </div>
+                <a class="text-link" href="#products">ყველა ნივთი <span>↗</span></a>
+            </div>
+            <div class="shop-toolbar">
+                <div class="filters" role="group" aria-label="პროდუქტის კატეგორიები">
+                    <button class="filter-chip active" data-category="all">ყველა</button>
+                    <button class="filter-chip" data-category="ქალი">ქალი</button>
+                    <button class="filter-chip" data-category="კაცი">კაცი</button>
+                    <button class="filter-chip" data-category="აქსესუარი">აქსესუარები</button>
+                </div>
+                <span class="product-total" id="productTotal">08 ნივთი</span>
+            </div>
+            <div class="product-grid" id="productGrid">
+                <article class="product-card" data-category="ქალი" data-name="თეთრი თეთრეულის პერანგი">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=900&q=80" alt="ქალის თეთრი თავისუფალი პერანგი" loading="lazy">
+                        <span class="product-tag">ბესტსელერი</span>
+                        <button class="favorite-button" aria-label="მონიშნე რჩეულად" aria-pressed="false">♡</button>
+                        <button class="quick-add" data-name="თეთრი თეთრეულის პერანგი" data-price="129">კალათაში დამატება <span>+</span></button>
+                    </div>
+                    <div class="product-info"><div><h3>თეთრი თეთრეულის პერანგი</h3><p>ქალი · თეთრი</p></div><strong>129₾</strong></div>
+                </article>
+                <article class="product-card" data-category="კაცი" data-name="კლასიკური ლურჯი პერანგი">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=900&q=80" alt="კლასიკური ლურჯი მამაკაცის პერანგი" loading="lazy">
+                        <button class="favorite-button" aria-label="მონიშნე რჩეულად" aria-pressed="false">♡</button>
+                        <button class="quick-add" data-name="კლასიკური ლურჯი პერანგი" data-price="149">კალათაში დამატება <span>+</span></button>
+                    </div>
+                    <div class="product-info"><div><h3>კლასიკური ლურჯი პერანგი</h3><p>კაცი · ცისფერი</p></div><strong>149₾</strong></div>
+                </article>
+                <article class="product-card" data-category="ქალი" data-name="მინიმალისტური შავი კაბა">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=80" alt="მინიმალისტური შავი კაბა" loading="lazy">
+                        <span class="product-tag sale-tag">−20%</span>
+                        <button class="favorite-button" aria-label="მონიშნე რჩეულად" aria-pressed="false">♡</button>
+                        <button class="quick-add" data-name="მინიმალისტური შავი კაბა" data-price="176">კალათაში დამატება <span>+</span></button>
+                    </div>
+                    <div class="product-info"><div><h3>მინიმალისტური შავი კაბა</h3><p>ქალი · შავი</p></div><strong>176₾ <del>220₾</del></strong></div>
+                </article>
+                <article class="product-card" data-category="კაცი" data-name="ყავისფერი ყოველდღიური ქურთუკი">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=80" alt="ყავისფერი ყოველდღიური ტყავის ქურთუკი" loading="lazy">
+                        <button class="favorite-button" aria-label="მონიშნე რჩეულად" aria-pressed="false">♡</button>
+                        <button class="quick-add" data-name="ყავისფერი ყოველდღიური ქურთუკი" data-price="289">კალათაში დამატება <span>+</span></button>
+                    </div>
+                    <div class="product-info"><div><h3>ყავისფერი ყოველდღიური ქურთუკი</h3><p>კაცი · ყავისფერი</p></div><strong>289₾</strong></div>
+                </article>
+                <article class="product-card" data-category="ქალი" data-name="რბილი ნაქსოვი ჟაკეტი">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80" alt="რბილი ღია ფერის ნაქსოვი სამოსი" loading="lazy">
+                        <button class="favorite-button" aria-label="მონიშნე რჩეულად" aria-pressed="false">♡</button>
+                        <button class="quick-add" data-name="რბილი ნაქსოვი ჟაკეტი" data-price="189">კალათაში დამატება <span>+</span></button>
+                    </div>
+                    <div class="product-info"><div><h3>რბილი ნაქსოვი ჟაკეტი</h3><p>ქალი · კრემისფერი</p></div><strong>189₾</strong></div>
+                </article>
+                <article class="product-card" data-category="კაცი" data-name="ყოველდღიური თეთრი მაისური">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80" alt="თეთრი ბამბის ყოველდღიური მაისური" loading="lazy">
+                        <span class="product-tag">ახალი</span>
+                        <button class="favorite-button" aria-label="მონიშნე რჩეულად" aria-pressed="false">♡</button>
+                        <button class="quick-add" data-name="ყოველდღიური თეთრი მაისური" data-price="79">კალათაში დამატება <span>+</span></button>
+                    </div>
+                    <div class="product-info"><div><h3>ყოველდღიური თეთრი მაისური</h3><p>კაცი · თეთრი</p></div><strong>79₾</strong></div>
+                </article>
+                <article class="product-card" data-category="აქსესუარი" data-name="ყავისფერი მხრის ჩანთა">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80" alt="ყავისფერი ტყავის მხრის ჩანთა" loading="lazy">
+                        <button class="favorite-button" aria-label="მონიშნე რჩეულად" aria-pressed="false">♡</button>
+                        <button class="quick-add" data-name="ყავისფერი მხრის ჩანთა" data-price="159">კალათაში დამატება <span>+</span></button>
+                    </div>
+                    <div class="product-info"><div><h3>ყავისფერი მხრის ჩანთა</h3><p>აქსესუარი · ყავისფერი</p></div><strong>159₾</strong></div>
+                </article>
+                <article class="product-card" data-category="აქსესუარი" data-name="კლასიკური სათვალე">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=80" alt="კლასიკური მზის სათვალე" loading="lazy">
+                        <button class="favorite-button" aria-label="მონიშნე რჩეულად" aria-pressed="false">♡</button>
+                        <button class="quick-add" data-name="კლასიკური სათვალე" data-price="99">კალათაში დამატება <span>+</span></button>
+                    </div>
+                    <div class="product-info"><div><h3>კლასიკური სათვალე</h3><p>აქსესუარი · შავი</p></div><strong>99₾</strong></div>
+                </article>
+            </div>
+            <p class="empty-state" id="emptyState" hidden>ამ ძიებისთვის ნივთები ვერ მოიძებნა.</p>
+            <section class="api-section" aria-labelledby="apiHeading">
+                <div class="api-heading">
+                    <div>
+                        <p class="eyebrow"><span></span> GET მოთხოვნის მაგალითი</p>
+                        <h3 id="apiHeading">ინტერნეტიდან მიღებული პროდუქტები</h3>
+                    </div>
+                    <span class="api-source">წყარო: DummyJSON</span>
+                </div>
+                <p class="api-status" id="apiStatus" role="status" aria-live="polite">პროდუქტები იტვირთება...</p>
+                <button class="api-retry" id="apiRetry" type="button" hidden>ხელახლა ცდა</button>
+                <div class="product-grid api-grid" id="apiProductGrid" aria-busy="true"></div>
+            </section>
+        </section>
+
+        <section class="story-section" id="story">
+            <div class="story-image">
+                <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1200&q=85" alt="მოდის ატელიეში შექმნილი ყოველდღიური სტილი" loading="lazy">
+                <span class="image-stamp">NOIR<br>STUDIO</span>
+            </div>
+            <div class="story-content">
+                <p class="eyebrow"><span></span> ჩვენი ფილოსოფია</p>
+                <h2>ნაკლები ხმაური.<br><em>მეტი შენ.</em></h2>
+                <p>გვჯერა, რომ სტილი იმაშია, როგორ გრძნობ თავს. ამიტომ ვქმნით გააზრებულ, კომფორტულ და მრავალმხრივ სამოსს, რომელიც შენთან ერთად ცხოვრობს — სეზონიდან სეზონამდე.</p>
+                <a class="text-link" href="#newsletter">გაიგე მეტი <span>↗</span></a>
+            </div>
+        </section>
+
+        <section class="newsletter-section" id="newsletter">
+            <p class="eyebrow light-eyebrow"><span></span> წერილები NOIR-ისგან</p>
+            <h2>იყავი პირველმა,<br>ვინც გაიგებს.</h2>
+            <p>ახალი კოლექციები, განსაკუთრებული შეთავაზებები და ცოტა შთაგონება.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <label class="visually-hidden" for="emailInput">ელფოსტა</label>
+                <input id="emailInput" type="email" placeholder="შენი ელფოსტა" required>
+                <button type="submit" aria-label="გამოწერა">გამოწერა <span>↗</span></button>
+            </form>
+            <small id="newsletterMessage">გამოწერით ეთანხმები ჩვენს კონფიდენციალურობის პირობებს.</small>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="wordmark footer-wordmark" href="#">NOIR<span>.</span></a>
+        <p>შენი სტილი, შენი ამბავი.</p>
+        <div class="footer-links"><a href="#products">კოლექცია</a><a href="#story">ჩვენ შესახებ</a><a href="mailto:hello@noir.ge">კონტაქტი</a></div>
+        <small>© 2025 NOIR. ყველა უფლება დაცულია.</small>
+    </footer>
+
+    <div class="overlay" id="overlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="შენი კალათა" aria-hidden="true">
+        <div class="drawer-header"><div><p class="eyebrow">შენი არჩევანი</p><h2>კალათა <span id="drawerCount">(0)</span></h2></div><button class="drawer-close" id="cartClose" aria-label="კალათის დახურვა">×</button></div>
+        <div class="cart-items" id="cartItems"><p class="cart-empty">შენი კალათა ჯერ ცარიელია.<br>იპოვე რამე, რაც მოგეწონება.</p></div>
+        <div class="cart-footer"><div class="subtotal"><span>ჯამი</span><strong id="cartTotal">0₾</strong></div><button class="button checkout-button" id="checkoutButton">შეკვეთის გაფორმება <span>↗</span></button><p>მიწოდების ღირებულება გამოითვლება შეკვეთისას.</p></div>
+    </aside>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
